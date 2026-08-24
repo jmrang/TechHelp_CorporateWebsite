@@ -1,0 +1,77 @@
+[
+  {
+    "id": "custom-software",
+    "icon": "code2",
+    "title": "Custom Software Development",
+    "tagline": "Web and mobile products engineered end-to-end — from discovery workshop to launch and beyond.",
+    "description": "We design, build and ship production-grade software tailored to your business. Small senior teams, weekly demos, and a process built around shipping value early and often.",
+    "features": [
+      "Discovery workshops & product scoping",
+      "Architecture & technical design",
+      "Full-stack development (React, Node.js, Python, .NET)",
+      "Native & cross-platform mobile apps",
+      "QA automation & end-to-end testing",
+      "Post-launch support & iteration"
+    ]
+  },
+  {
+    "id": "cloud-consulting",
+    "icon": "cloud",
+    "title": "Cloud Consulting",
+    "tagline": "Migrate to the cloud with confidence — and keep the bill predictable once you're there.",
+    "description": "From lift-and-shift migrations to cloud-native re-architecture, we help teams make the most of AWS, Azure and Google Cloud without surprise invoices or vendor lock-in.",
+    "features": [
+      "Cloud readiness assessment",
+      "AWS / Azure / GCP migration roadmaps",
+      "Cost optimization & FinOps",
+      "Serverless & managed-service adoption",
+      "Security & compliance reviews",
+      "Team enablement & training"
+    ]
+  },
+  {
+    "id": "ui-ux-design",
+    "icon": "palette",
+    "title": "UI/UX Design",
+    "tagline": "Interfaces your users understand in seconds and enjoy coming back to.",
+    "description": "Research-driven product design that balances user needs with business goals — validated with real users before a single line of code is written.",
+    "features": [
+      "Product discovery & user research",
+      "Wireframes & interactive prototypes",
+      "Design systems & component libraries",
+      "Usability testing",
+      "Accessibility (WCAG 2.2) audits",
+      "Brand-aligned visual design"
+    ]
+  },
+  {
+    "id": "devops-infrastructure",
+    "icon": "serverCog",
+    "title": "DevOps & Infrastructure",
+    "tagline": "Ship daily instead of quarterly — with infrastructure your team can actually operate.",
+    "description": "We build delivery pipelines and platforms that turn releases into a non-event: automated, observable, and boring in all the right ways.",
+    "features": [
+      "CI/CD pipeline design & implementation",
+      "Kubernetes & containerization",
+      "Infrastructure as Code (Terraform)",
+      "Observability & monitoring stacks",
+      "Blue-green & canary release automation",
+      "Incident response playbooks"
+    ]
+  },
+  {
+    "id": "technical-audits",
+    "icon": "shieldCheck",
+    "title": "Technical Audits",
+    "tagline": "An honest, senior-level read on your codebase, architecture and team practices.",
+    "description": "Whether you're preparing for due diligence, scaling pains or a legacy rewrite, our audits give you an objective picture and a prioritized action plan — not a 200-page PDF nobody reads.",
+    "features": [
+      "Codebase health assessment",
+      "Architecture & scalability review",
+      "Legacy modernization roadmap",
+      "Performance profiling & optimization",
+      "Security audit & remediation plan",
+      "Technical due diligence for investors"
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "name": "TechHelp",
+  "tagline": "Software Consulting Company",
+  "founded": 2014,
+  "email": "hello@techhelp.dev",
+  "phone": "+1 (415) 555-0134",
+  "address": ["100 Market Street, Suite 300", "San Francisco, CA 94105"],
+  "hours": [
+    "Mon – Fri: 9:00 AM – 6:00 PM PT",
+    "24/7 on-call for Enterprise partners"
+  ],
+  "socials": [
+    { "platform": "LinkedIn", "url": "#" },
+    { "platform": "Twitter", "url": "#" },
+    { "platform": "GitHub", "url": "#" },
+    { "platform": "Dribbble", "url": "#" }
+  ],
+  "stats": [
+    { "value": 120, "suffix": "+", "label": "Projects delivered" },
+    { "value": 98, "suffix": "%", "label": "Client satisfaction" },
+    { "value": 12, "suffix": "+", "label": "Years in business" },
+    { "value": 40, "suffix": "+", "label": "Engineers & designers" }
+  ],
+  "clients": [
+    { "name": "Nordwind", "icon": "mountain" },
+    { "name": "Quantivo", "icon": "hexagon" },
+    { "name": "Helix Labs", "icon": "dna" },
+    { "name": "Bluepeak", "icon": "triangle" },
+    { "name": "Craftline", "icon": "penTool" },
+    { "name": "Datum", "icon": "database" }
+  ],
+  "values": [
+    {
+      "icon": "heartHandshake",
+      "title": "Partnership over transactions",
+      "description": "We win when you win. That means honest advice even when it costs us billable hours — and saying \"don't build this\" when the math doesn't work."
+    },
+    {
+      "icon": "lightbulb",
+      "title": "Pragmatic innovation",
+      "description": "We adopt new technology when it serves the product, never to pad a résumé. Boring tech that ships beats exciting tech that doesn't."
+    },
+    {
+      "icon": "gauge",
+      "title": "Velocity with quality",
+      "description": "Speed is a feature, but rework is the enemy of speed. Small batches, automated tests and weekly demos keep us fast and correct."
+    },
+    {
+      "icon": "messagesSquare",
+      "title": "Radical transparency",
+      "description": "You see what we see: open backlogs, shared Slack channels and honest demos — including the stuff that didn't go to plan."
+    }
+  ],
+  "milestones": [
+    {
+      "year": "2014",
+      "title": "Founded in San Francisco",
+      "description": "Elena and Daniel leave their respective startups to start a consultancy built around small senior teams and weekly shipping."
+    },
+    {
+      "year": "2016",
+      "title": "First enterprise engagement",
+      "description": "A payments-platform rebuild for PayNorth becomes our first seven-figure contract — and still our longest-running client relationship."
+    },
+    {
+      "year": "2019",
+      "title": "50th project delivered",
+      "description": "The team grows past 20 specialists and formalizes its discovery-phase methodology after seeing its impact across engagements."
+    },
+    {
+      "year": "2021",
+      "title": "Remote-first, worldwide",
+      "description": "We go fully remote-first and open a European hub in Lisbon, extending coverage across time zones for support and delivery."
+    },
+    {
+      "year": "2023",
+      "title": "SOC 2 Type II certification",
+      "description": "Formalizing the security practices our regulated clients already trusted us with opens doors in healthcare and finance."
+    },
+    {
+      "year": "2026",
+      "title": "120+ projects and counting",
+      "description": "A 40-person team of engineers, designers and strategists serving clients across four continents."
+    }
+  ]
+}

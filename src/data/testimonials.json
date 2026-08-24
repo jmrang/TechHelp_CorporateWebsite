@@ -1,0 +1,37 @@
+[
+  {
+    "quote": "TechHelp felt like an extension of our own team from day one. They challenged our assumptions where it mattered, shipped relentlessly, and delivered a platform our customers genuinely love.",
+    "name": "Sarah Mitchell",
+    "role": "VP of Product",
+    "company": "Nordwind",
+    "rating": 5
+  },
+  {
+    "quote": "The technical audit alone paid for itself twice over. Their engineers found bottlenecks our team had chased for months and left us with a clear, prioritized roadmap instead of a vague report.",
+    "name": "David Chen",
+    "role": "CTO",
+    "company": "Quantivo",
+    "rating": 5
+  },
+  {
+    "quote": "From first workshop to launch, everything ran on schedule and on budget. Communication was proactive — in eighteen months I never once had to ask for a status update.",
+    "name": "Amara Okafor",
+    "role": "CEO",
+    "company": "Helix Labs",
+    "rating": 5
+  },
+  {
+    "quote": "They modernized a decade-old monolith without pausing feature work. Our deploy frequency went from monthly to daily, and our incident load dropped by more than half.",
+    "name": "James Whitfield",
+    "role": "Head of Engineering",
+    "company": "Bluepeak",
+    "rating": 4
+  },
+  {
+    "quote": "A rare mix of deep engineering talent and real product thinking. TechHelp didn't just build what we asked for — they helped us figure out what we should have asked for.",
+    "name": "Laura Bennett",
+    "role": "VP of Engineering",
+    "company": "PayNorth",
+    "rating": 5
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "starter",
+    "name": "Starter",
+    "price": "$9,900",
+    "priceNote": "per project",
+    "description": "For focused builds and MVPs that need to ship fast without cutting corners.",
+    "ctaLabel": "Start a project",
+    "featured": false,
+    "features": [
+      "Up to 2 dedicated specialists",
+      "Discovery workshop & roadmap",
+      "4–8 week delivery cycles",
+      "Weekly demo & status updates",
+      "QA testing included",
+      "30 days post-launch support",
+      "Email support (48h response)"
+    ]
+  },
+  {
+    "id": "growth",
+    "name": "Growth",
+    "price": "$24,900",
+    "priceNote": "per project",
+    "description": "Our most popular engagement — a full product team for ambitious web and mobile products.",
+    "ctaLabel": "Book a consultation",
+    "featured": true,
+    "badge": "Most Popular",
+    "features": [
+      "Cross-functional pod of 4–6 experts",
+      "Dedicated product manager",
+      "Design + development sprints",
+      "CI/CD & analytics setup",
+      "Bi-weekly executive reporting",
+      "Priority Slack channel",
+      "90 days post-launch support",
+      "Flexible scope adjustments"
+    ]
+  },
+  {
+    "id": "enterprise",
+    "name": "Enterprise",
+    "price": "Custom",
+    "priceNote": "annual partnership",
+    "description": "A long-term partnership for complex platforms, regulated industries and scale-ups.",
+    "ctaLabel": "Talk to sales",
+    "featured": false,
+    "features": [
+      "Embedded multi-disciplinary team",
+      "Solution architect & CTO advisory",
+      "SLAs up to 99.99%",
+      "Security & compliance program (SOC 2, HIPAA)",
+      "Quarterly innovation roadmap",
+      "24/7 on-call support",
+      "Dedicated account executive"
+    ]
+  }
+]

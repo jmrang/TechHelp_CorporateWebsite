@@ -1,0 +1,206 @@
+[
+  {
+    "slug": "fintech-payments-platform-rebuild",
+    "client": "PayNorth",
+    "industry": "FinTech",
+    "title": "Rebuilding a Payments Platform for 10x Growth",
+    "summary": "A legacy monolith was capping PayNorth's growth at 40 transactions per second. We rebuilt the core ledger on an event-driven architecture — without a single day of downtime.",
+    "services": ["custom-software", "cloud-consulting"],
+    "stack": ["React", "Node.js", "PostgreSQL", "AWS", "Kafka"],
+    "duration": "7 months",
+    "year": "2025",
+    "metrics": [
+      { "value": "10x", "label": "Transaction throughput" },
+      { "value": "99.99%", "label": "Uptime since relaunch" },
+      { "value": "-42%", "label": "Infrastructure cost" },
+      { "value": "0", "label": "Minutes of downtime in cutover" }
+    ],
+    "challenge": [
+      "PayNorth's original platform had served them well for eight years, but peak-season traffic now pushed it past its ceiling. Batch jobs overran their windows, deploys required weekend maintenance windows, and every new merchant feature took a quarter to ship.",
+      "Worse, the company had just signed two enterprise clients whose combined volume would triple transaction load within twelve months. A rewrite was unavoidable — but with live merchants transacting around the clock, there was no acceptable window to switch over."
+    ],
+    "solution": [
+      "We began with a six-week technical audit that mapped every integration, data flow and hidden coupling in the monolith. From that we designed a strangler-fig migration: new event-driven services built around Kafka absorbed responsibilities one bounded context at a time, while the legacy core kept running underneath.",
+      "The new stack pairs a Node.js ledger service with PostgreSQL partitioned by merchant, fronted by a React dashboard rebuilt from PayNorth's actual support tickets rather than internal assumptions. A dual-write verification phase ran for eight weeks, comparing outputs of old and new systems on live traffic until they matched exactly."
+    ],
+    "results": [
+      "Cutover happened mid-morning on a Tuesday: traffic shifted gradually over 72 hours with zero downtime and zero lost transactions. The platform now sustains ten times its previous peak load at less than sixty percent of the old infrastructure cost, and feature lead time dropped from quarterly releases to weekly deploys.",
+      "PayNorth's engineering team operates the system fully in-house today — a deliberate outcome. Every service ships with runbooks, architecture decision records and the pairing sessions it took to transfer ownership."
+    ],
+    "quote": {
+      "text": "TechHelp did what three consultancies before them said couldn't be done: a zero-downtime migration of our core ledger. What impressed us most is that they engineered themselves out of a job.",
+      "name": "Laura Bennett",
+      "role": "VP of Engineering, PayNorth"
+    }
+  },
+  {
+    "slug": "telehealth-video-platform",
+    "client": "MedBridge Health",
+    "industry": "HealthTech",
+    "title": "A Telehealth Platform Patients Actually Return To",
+    "summary": "MedBridge's video consultations were losing one in four patients at connection time. We rebuilt the experience end-to-end — from intake forms to WebRTC reliability — and no-shows fell by a third.",
+    "services": ["ui-ux-design", "custom-software"],
+    "stack": ["React", "TypeScript", "WebRTC", "Python", "GCP"],
+    "duration": "6 months",
+    "year": "2025",
+    "metrics": [
+      { "value": "250k", "label": "Consultations per year" },
+      { "value": "-35%", "label": "Appointment no-show rate" },
+      { "value": "4.8★", "label": "Patient app-store rating" },
+      { "value": "12s", "label": "Median join-to-consult time" }
+    ],
+    "challenge": [
+      "MedBridge Health connected patients with specialists across three states, but the digital experience was eroding trust before clinicians ever appeared on screen. A quarter of patients failed to connect on the first attempt, mobile intake forms took upwards of nine minutes, and older patients routinely called the support line in frustration.",
+      "Leadership suspected the problem was technical. Our discovery research showed it was mostly human: confusing instructions, fear of doing something wrong, and a connection flow that offered no reassurance while it worked."
+    ],
+    "solution": [
+      "We ran moderated usability sessions with fourteen patients aged 29 to 81, then redesigned the entire journey around a single principle: never let a patient wonder whether it's working. Plain-language screens, a visible connection checklist, and automatic fallback to audio-only replaced the silent failure states.",
+      "Underneath, we replaced the aging third-party video SDK with self-managed WebRTC infrastructure on GCP, added regional TURN servers to fix the rural connectivity issues driving half of all failed connections, and rebuilt intake as a conversational progressive form that saves answers as patients type."
+    ],
+    "results": [
+      "Failed connections dropped by 87 percent within two months of rollout, and median time from appointment link to face-to-face consultation fell to twelve seconds. The no-show rate declined by a third once reminder flows were tied to the same reassurance patterns.",
+      "The patient-facing app now holds a 4.8-star rating across app stores, and MedBridge has expanded the platform to two additional states on the back of the improved reviews."
+    ],
+    "quote": {
+      "text": "They watched our patients struggle before writing a line of code. That research changed what we built — and it's why the numbers moved the way they did.",
+      "name": "Dr. Anita Shah",
+      "role": "Chief Clinical Officer, MedBridge Health"
+    }
+  },
+  {
+    "slug": "ecommerce-replatforming",
+    "client": "Craftline",
+    "industry": "E-commerce",
+    "title": "Replatforming a Craft Marketplace for Peak Season",
+    "summary": "With Black Friday traffic tripling year over year, Craftline needed a replatform without pausing feature work. We delivered a headless storefront that survived peak season at 1.2-second load times.",
+    "services": ["custom-software", "devops-infrastructure"],
+    "stack": ["Next.js", "Node.js", "GraphQL", "Stripe", "Vercel"],
+    "duration": "5 months",
+    "year": "2024",
+    "metrics": [
+      { "value": "+28%", "label": "Conversion rate" },
+      { "value": "1.2s", "label": "Median LCP sitewide" },
+      { "value": "3x", "label": "Peak traffic handled" },
+      { "value": "99.98%", "label": "Black Friday uptime" }
+    ],
+    "challenge": [
+      "Craftline's marketplace for independent makers had outgrown its aging hosted platform. Page loads crept past five seconds, merchandising changes required vendor support tickets, and the previous Black Friday saw intermittent outages precisely when revenue peaked.",
+      "The hard constraint wasn't technical — it was organizational. Craftline's small product team had a roadmap of seller-facing features they refused to pause for a replatform. Any solution had to proceed in parallel, not instead."
+    ],
+    "solution": [
+      "We architected a headless storefront with Next.js at the edge, consuming catalog data through a GraphQL layer that wrapped Craftline's existing order-management APIs. This let the old platform keep running the back office untouched while the entire customer experience migrated route by route.",
+      "Each week shipped another slice behind edge flags — category pages first, then product pages, search, checkout. Seller tools stayed on the legacy UI throughout, so the team kept shipping roadmap features with zero interruption. Load testing against recorded production traffic began eight weeks before Black Friday."
+    ],
+    "results": [
+      "Black Friday traffic arrived at triple the prior year's volume and the storefront didn't blink: 99.98 percent uptime with a median largest-contentful-paint of 1.2 seconds on mobile. Conversion rose 28 percent, driven largely by mobile shoppers who previously abandoned slow pages.",
+      "Merchandising moves at Craftline speed now: campaigns that once took vendor tickets take minutes through a self-serve CMS, and the platform scaled through two further peak seasons without emergency intervention."
+    ],
+    "quote": {
+      "text": "We replatformed our entire storefront without our sellers noticing anything except that sales went up. The parallel-migration approach was masterful.",
+      "name": "Jonas Petersen",
+      "role": "CEO, Craftline"
+    }
+  },
+  {
+    "slug": "saas-analytics-modernization",
+    "client": "Datum",
+    "industry": "SaaS",
+    "title": "Taking a B2B Analytics Product from Minutes to Milliseconds",
+    "summary": "Datum's dashboards were so slow customers churned over them. We re-architected the query engine and delivery pipeline — p95 latency fell 73 percent and releases went weekly.",
+    "services": ["technical-audits", "devops-infrastructure"],
+    "stack": ["Python", "ClickHouse", "React", "Terraform", "AWS"],
+    "duration": "8 months",
+    "year": "2024",
+    "metrics": [
+      { "value": "-73%", "label": "p95 dashboard latency" },
+      { "value": "-18%", "label": "Logo churn" },
+      { "value": "4/week", "label": "Release cadence (was monthly)" },
+      { "value": "2.1B", "label": "Events processed daily" }
+    ],
+    "challenge": [
+      "Datum's product promised self-serve analytics, but reality disagreed: large tenants waited minutes for dashboards to render, and the heaviest accounts had learned to export CSVs instead. Support tickets about slow numbers were the number-one churn indicator in exit interviews.",
+      "Internally, the story compounded the pain. A single monolithic deploy train released monthly because any regression rolled back everything, and engineers avoided touching the query layer entirely — nobody fully understood it anymore."
+    ],
+    "solution": [
+      "Our audit traced the latency to a cascade of N+1 aggregations over a Postgres cluster doing analytical work it was never shaped for. We introduced ClickHouse for analytical workloads with a carefully modeled ingestion pipeline, keeping Postgres for transactional data — a two-week proof-of-concept cut benchmark latency 60 percent before we wrote a line of application code.",
+      "On the delivery side, we broke the monolith's deploy train into independently releasable services with Terraform-managed infrastructure, canary deployments and automated rollback gates. The query layer got the thing it needed most: characterization tests, so engineers could change it without fear for the first time in years."
+    ],
+    "results": [
+      "p95 dashboard latency fell from 41 seconds to 11 seconds — a 73 percent improvement — with sub-second results for the majority of queries. The latency ticket category disappeared from Datum's top ten within a quarter, and logo churn declined 18 percent year over year.",
+      "Release cadence climbed from monthly to roughly four deploys per week, which turned out to be the quiet hero of the engagement: performance fixes, once risky, now shipped the week they were identified."
+    ],
+    "quote": {
+      "text": "They fixed our latency problem and, almost accidentally, our deployment culture. The audit paid for itself; the follow-through transformed the company.",
+      "name": "Yuki Tanaka",
+      "role": "CTO, Datum"
+    }
+  },
+  {
+    "slug": "logistics-route-optimization",
+    "client": "SwiftHaul Logistics",
+    "industry": "Logistics",
+    "title": "Route Optimization That Paid for Itself in Six Months",
+    "summary": "Dispatchers at SwiftHaul planned 400 daily routes on spreadsheets and local knowledge. We built an optimization engine that cut fuel costs 17 percent — and won over the dispatchers using it.",
+    "services": ["custom-software", "technical-audits"],
+    "stack": ["Python", "OR-Tools", "React", "PostgreSQL", "Azure"],
+    "duration": "9 months",
+    "year": "2023",
+    "metrics": [
+      { "value": "-17%", "label": "Fuel costs" },
+      { "value": "+31%", "label": "Deliveries per driver-day" },
+      { "value": "6 mo", "label": "Time to full ROI" },
+      { "value": "400+", "label": "Routes optimized daily" }
+    ],
+    "challenge": [
+      "SwiftHaul's dispatch team were masters of their craft — twenty years of local knowledge encoded in spreadsheets, sticky notes and intuition. But the business had grown to 400 daily routes across five depots, and manual planning could not stretch further. Drivers sat in traffic the spreadsheets never saw, and fuel spend climbed every quarter.",
+      "Two previous off-the-shelf routing tools had been abandoned by the dispatchers themselves: rigid systems that ignored depot-specific constraints and produced routes drivers didn't trust. Any new tool faced a user adoption problem before an algorithmic one."
+    ],
+    "solution": [
+      "We spent the first month riding along with dispatchers, cataloging the forty-plus real-world constraints no vendor tool had captured — dock appointment windows, driver certifications, trailer weight limits, and the unspoken rule that certain receivers must never see a truck before 10 AM.",
+      "The engine we built wraps Google OR-Tools solvers in a service that ingests orders, fleet state and live traffic, producing candidate routes dispatchers can adjust by drag-and-drop. Every manual override teaches the system: constraint weights tune continuously from dispatcher corrections. The React planning board mirrors the spreadsheet layout veterans already knew — deliberately."
+    ],
+    "results": [
+      "Fuel costs fell 17 percent in the first quarter of full deployment, and deliveries per driver-day rose 31 percent as routes stopped fighting geography. The system reached full return on investment within six months of go-live.",
+      "The metric we are proudest of does not appear in a chart: after an initial two-week skepticism window, dispatchers voluntarily retired their spreadsheets. The planning tool became the source of truth because it earned the room's respect."
+    ],
+    "quote": {
+      "text": "Every consultant before them tried to replace our dispatchers' judgment. TechHelp bottled it into software instead. That's why this one stuck.",
+      "name": "Ray Delgado",
+      "role": "COO, SwiftHaul Logistics"
+    }
+  },
+  {
+    "slug": "edtech-lms-launch",
+    "client": "BrightPath Academy",
+    "industry": "EdTech",
+    "title": "Launching a National Learning Platform in Twenty Weeks",
+    "summary": "BrightPath won a government contract requiring a full learning platform in five months. We assembled a dedicated pod and launched on schedule — then onboarded 120,000 students in the first term.",
+    "services": ["custom-software", "ui-ux-design"],
+    "stack": ["React", "Node.js", "PostgreSQL", "Redis", "AWS"],
+    "duration": "20 weeks",
+    "year": "2023",
+    "metrics": [
+      { "value": "120k", "label": "Students onboarded term one" },
+      { "value": "99.95%", "label": "Uptime across first academic year" },
+      { "value": "72", "label": "NPS from instructors" },
+      { "value": "20 wks", "label": "Contract to public launch" }
+    ],
+    "challenge": [
+      "BrightPath Academy had won a national contract to deliver accredited online courses to adult learners returning to education — with a contractual launch date twenty weeks out. The platform needed course authoring, proctored assessments, accessibility compliance at WCAG 2.1 AA, and the capacity for enrollment surges when terms opened.",
+      "The constraint that defined the project: failure was not a missed KPI, it was a cohort of thousands of learners with nowhere to log in on day one. There was no second chance at launch."
+    ],
+    "solution": [
+      "We staffed a dedicated pod of six — two engineers, a designer, a QA specialist, a product manager and an accessibility expert — with a single mandate: launch-ready in twenty weeks. Discovery compressed to one intensive week, prioritizing ruthlessly against the contract's non-negotiables.",
+      "We built on a proven React and Node.js foundation rather than experimenting, reserving innovation budget for where BrightPath genuinely differentiated: adaptive course sequencing. Weekly instructor-testing sessions caught workflow problems early, and load simulations modeled term-opening surges at fifteen times baseline traffic."
+    ],
+    "results": [
+      "The platform launched on schedule — fully accessible, fully load-tested — and was adopted by 120,000 students in its first term with uptime of 99.95 percent across the academic year. Enrollment peaks at term openings passed without incident.",
+      "An instructor NPS of 72 reflected the design decisions made early: course authoring that took minutes instead of days, and assessment workflows built with — not merely tested by — the educators who used them."
+    ],
+    "quote": {
+      "text": "Twenty weeks sounded impossible. Their pod treated our launch date like their own deadline, and 120,000 students showed up to a platform that simply worked.",
+      "name": "Margaret Adeyemi",
+      "role": "Program Director, BrightPath Academy"
+    }
+  }
+]

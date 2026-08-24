@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Elena Torres",
+    "role": "Co-founder & CEO",
+    "bio": "Former VP of Engineering at two venture-backed startups. Elena leads delivery and makes sure every engagement starts with honest scoping — and ends with a reference, not just an invoice.",
+    "socials": { "linkedin": "#", "twitter": "#", "github": "#" }
+  },
+  {
+    "name": "Daniel Kim",
+    "role": "Co-founder & CTO",
+    "bio": "Fifteen years building distributed systems across fintech and healthcare. Daniel still reviews architecture on every project and leads our technical audit practice personally.",
+    "socials": { "linkedin": "#", "twitter": "#", "github": "#" }
+  },
+  {
+    "name": "Marcus Webb",
+    "role": "Head of Design",
+    "bio": "Product designer of twelve years with a research background. Marcus believes the best interface decisions are made watching real users, not debating in conference rooms.",
+    "socials": { "linkedin": "#", "twitter": "#", "github": "#" }
+  },
+  {
+    "name": "Priya Nair",
+    "role": "Principal Cloud Architect",
+    "bio": "AWS certified architect with a FinOps specialty. Priya has led migrations moving millions of dollars of annual infrastructure spend — usually downward.",
+    "socials": { "linkedin": "#", "twitter": "#", "github": "#" }
+  },
+  {
+    "name": "Sofia Ramos",
+    "role": "Senior Full-Stack Engineer",
+    "bio": "TypeScript enthusiast and CI/CD perfectionist. Sofia has shipped production software in six industries and brings testing discipline wherever she lands.",
+    "socials": { "linkedin": "#", "twitter": "#", "github": "#" }
+  },
+  {
+    "name": "Tomás Ferreira",
+    "role": "Engineering Manager",
+    "bio": "Runs our Lisbon hub and keeps distributed pods humming across time zones. Tomás's superpower is making weekly demos something clients look forward to.",
+    "socials": { "linkedin": "#", "twitter": "#", "github": "#" }
+  },
+  {
+    "name": "Hannah Cole",
+    "role": "Product Designer",
+    "bio": "Design-system specialist who has built component libraries adopted by teams of fifty-plus engineers. Hannah prototypes in code to keep handoff friction near zero.",
+    "socials": { "linkedin": "#", "twitter": "#", "github": "#" }
+  },
+  {
+    "name": "Omar Haddad",
+    "role": "Delivery Lead",
+    "bio": "PMP-certified delivery lead who has run engagements from six-week audits to multi-year platform programs. Omar owns the part clients notice most: no surprises.",
+    "socials": { "linkedin": "#", "twitter": "#", "github": "#" }
+  }
+]

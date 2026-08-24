@@ -1,0 +1,42 @@
+[
+  {
+    "category": "Process",
+    "question": "How does a typical engagement work?",
+    "answer": "Every project starts with a free consultation and a short discovery phase where we align on goals, scope and success metrics. You receive a proposal with a fixed timeline and budget, then we deliver in one-to-two-week sprints — each ending with a working demo."
+  },
+  {
+    "category": "Process",
+    "question": "How quickly can you start?",
+    "answer": "For most engagements we can assemble a team and kick off within two to three weeks of signing. Discovery workshops can usually be scheduled even sooner."
+  },
+  {
+    "category": "Pricing",
+    "question": "How do you price projects?",
+    "answer": "Most projects are fixed-price after discovery, so you know the investment before development begins. Ongoing partnerships and staff augmentation are billed as simple monthly retainers. See the pricing section on our Services page for typical ranges."
+  },
+  {
+    "category": "Technical",
+    "question": "Can you work with our existing tech stack?",
+    "answer": "Yes — we are deliberately stack-flexible. We are strongest with React, Node.js, Python, .NET and modern cloud infrastructure on AWS, Azure and GCP, but we regularly join teams with legacy stacks and adapt rather than rewrite."
+  },
+  {
+    "category": "Technical",
+    "question": "Who owns the intellectual property?",
+    "answer": "You do — completely. All code, designs and documentation produced during the engagement are transferred to you under the contract, with no licensing strings attached."
+  },
+  {
+    "category": "Support",
+    "question": "Do you offer support after launch?",
+    "answer": "Every project includes a post-launch support window (30–90 days depending on tier). After that, most clients move to a monthly care plan covering monitoring, security patches and small improvements."
+  },
+  {
+    "category": "Support",
+    "question": "What if we need to pause or stop the engagement?",
+    "answer": "Our contracts include clear pause and exit terms. Because we document continuously and keep repositories clean, you can bring the work in-house at any point without penalty."
+  },
+  {
+    "category": "Security",
+    "question": "How do you handle confidentiality and security?",
+    "answer": "We sign NDAs as standard practice, follow SOC 2-aligned internal policies, and routinely work within client compliance requirements such as HIPAA, GDPR and PCI-DSS. Access is least-privilege and fully audited."
+  }
+]

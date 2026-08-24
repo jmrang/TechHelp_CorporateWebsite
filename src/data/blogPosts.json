@@ -1,0 +1,161 @@
+[
+  {
+    "slug": "scaling-startup-engineering-teams",
+    "title": "How to Scale Your Startup's Engineering Team Without Losing Velocity",
+    "excerpt": "Headcount is the easy part. These are the systems — ownership, documentation and developer experience — that keep ten engineers as fast as three.",
+    "category": "Engineering Leadership",
+    "author": { "name": "Elena Torres", "role": "Co-founder & CEO" },
+    "authorBio": "Elena co-founded TechHelp after leading engineering at two venture-backed startups. She has helped scale engineering organizations from 3 to 60+ without the usual velocity collapse.",
+    "date": "2026-07-18",
+    "readTime": 8,
+    "content": [
+      { "type": "p", "text": "Every startup hits the same wall. At three engineers, everyone knows everything, coordination happens at lunch, and shipping is limited only by how fast you can type. At ten engineers, the same team wonders why everything takes longer — and the instinctive answer, hiring more people, usually makes it worse." },
+      { "type": "p", "text": "We've watched (and occasionally caused) this story across dozens of engagements. The teams that scale gracefully share a few habits that are boring to read about and transformative in practice." },
+      { "type": "h2", "text": "Make ownership explicit before you need it" },
+      { "type": "p", "text": "At three engineers, ownership is implicit: whoever built it owns it. That model breaks silently. The first sign is usually a production incident where two people each assumed the other was watching. The fix costs almost nothing if done early:" },
+      { "type": "list", "items": [
+        "Give every service and subsystem exactly one owner — a person, not a team",
+        "Write it down where engineers already look, not a wiki nobody visits",
+        "Rotate ownership deliberately; ownership that never changes becomes a bus factor of one"
+      ] },
+      { "type": "p", "text": "Explicit ownership isn't bureaucracy — it's what lets a new hire ship to an unfamiliar subsystem in their first week instead of their fourth month." },
+      { "type": "h2", "text": "Invest in developer experience before it hurts" },
+      { "type": "p", "text": "The most expensive code in your codebase is the change that takes two hours to write and two weeks to verify. When local setup takes a day, when CI queues for forty minutes, when staging is 'usually down on Mondays' — every engineer pays that tax on every task." },
+      { "type": "quote", "text": "The best engineering cultures treat internal friction as seriously as customer-facing bugs." },
+      { "type": "p", "text": "Budget one engineer-day per sprint for tooling and pipeline work, permanently. Teams that do this consistently ship measurably more than teams that don't, because they're not spending a fifth of their week fighting their own infrastructure." },
+      { "type": "h2", "text": "Documentation is a multiplier, not a tax" },
+      { "type": "p", "text": "You don't need exhaustive docs. You need three things, kept current: an architecture overview a new hire can read in twenty minutes, runbooks for the failure modes you've actually seen, and decision records explaining why things are the way they are. The last one prevents the most expensive class of bug there is: re-debating settled questions with new information-free enthusiasm." },
+      { "type": "p", "text": "None of this is glamorous. But velocity doesn't die from a single dramatic failure — it erodes through a hundred small frictions. The startups that keep shipping while they scale are simply the ones that kept sweeping the floors." }
+    ]
+  },
+  {
+    "slug": "design-systems-that-last",
+    "title": "Design Systems That Survive Real Product Teams",
+    "excerpt": "Most design systems die within a year of launch. The survivors share five traits — and none of them are about the components themselves.",
+    "category": "UI/UX Design",
+    "author": { "name": "Marcus Webb", "role": "Head of Design" },
+    "authorBio": "Marcus has led product design across fintech, health and e-commerce engagements, building design systems adopted by teams of fifty-plus engineers.",
+    "date": "2026-06-30",
+    "readTime": 6,
+    "content": [
+      { "type": "p", "text": "There's a graveyard of design systems out there: beautiful component libraries launched with executive fanfare, abandoned within eighteen months. The components were fine. What died was the system around them — or rather, the lack of one." },
+      { "type": "h2", "text": "Start with tokens, not components" },
+      { "type": "p", "text": "Teams love jumping straight to buttons and modals. Resist it. The durable core of any design system is its vocabulary: color scales, spacing rhythm, typography, elevation. Tokens are cheap to change and expensive to retrofit. Get the foundation right and components become assembly work instead of design debates." },
+      { "type": "h2", "text": "Prototype in code or don't bother" },
+      { "type": "p", "text": "A design system that lives only in Figma is a suggestion. The moment a designer's mock-up and an engineer's implementation diverge — and they always diverge — trust erodes on both sides. Our designers prototype in code for anything stateful, which keeps handoff friction near zero and makes the coded component the source of truth from day one." },
+      { "type": "quote", "text": "A design system is a product whose users are your own teams. Product thinking applies — roadmap pressure included." },
+      { "type": "h2", "text": "Governance beats documentation" },
+      { "type": "p", "text": "The question that decides whether your system survives: when someone needs something it doesn't offer, what happens? If the answer is 'they build it locally and move on,' you're maintaining a museum. Healthy systems have an explicit contribution path, a review cadence measured in days not quarters, and maintainers empowered to say yes." },
+      { "type": "list", "items": [
+        "Version the system like software — changelogs, deprecation windows, migration notes",
+        "Measure adoption honestly: coverage percentage per product surface, reviewed monthly",
+        "Kill components nobody uses; dead weight destroys credibility faster than missing features"
+      ] },
+      { "type": "p", "text": "Design systems aren't won at launch — they're won in the hundred small decisions afterward about who contributes, how quickly, and how honestly adoption is tracked." }
+    ]
+  },
+  {
+    "slug": "cloud-cost-optimization-checklist",
+    "title": "The Practical Cloud Cost Optimization Checklist",
+    "excerpt": "Most teams overpay for cloud by 30 percent or more. Not with clever tricks — by skipping the boring fundamentals on this list.",
+    "category": "Cloud",
+    "author": { "name": "Priya Nair", "role": "Principal Cloud Architect" },
+    "authorBio": "Priya has led cloud migrations and FinOps programs for clients moving millions of dollars of annual infrastructure spend — usually in a downward direction.",
+    "date": "2026-06-12",
+    "readTime": 10,
+    "content": [
+      { "type": "p", "text": "The average cloud customer wastes roughly a third of their spend. That's not a rounding error — for a company paying $50k a month, it's two salaries. And the fix is rarely exotic. In audit after audit, the same handful of fundamentals accounts for most of the waste." },
+      { "type": "h2", "text": "Right-size before you optimize anything else" },
+      { "type": "p", "text": "Instances launched at project start and never revisited are the single largest waste category we find. Cloud providers profit from your set-and-forget instincts; fight them." },
+      { "type": "list", "items": [
+        "Pull utilization data for the last 30–90 days; flag anything averaging under 20% CPU or memory",
+        "Downsize one notch, watch for a week, repeat. Boring beats brilliant.",
+        "Move spiky-but-predictable workloads to autoscaling instead of peak-sized static capacity"
+      ] },
+      { "type": "h2", "text": "Commit to what's stable" },
+      { "type": "p", "text": "Reserved instances and savings plans trade flexibility for 30–60% discounts on steady-state load. The mistake teams make is committing to everything or nothing. Commit only to what your history says is truly constant — baseline production capacity — and leave everything bursty on-demand." },
+      { "type": "quote", "text": "Cost optimization is an ongoing practice, not a quarterly panic. Teams that treat it as such spend about 30% less than their peers — without heroics." },
+      { "type": "h2", "text": "Make costs visible to the people who create them" },
+      { "type": "p", "text": "A monthly invoice that arrives at the finance team changes nobody's behavior. Tagging policies plus per-team dashboards plus a weekly digest do. When engineers can see what their pull request costs per month to run, they suddenly develop strong opinions about payload sizes and polling intervals." },
+      { "type": "p", "text": "None of this requires a FinOps platform or a consultant (though we know some excellent ones). It requires treating cloud spend like any other engineering metric: measured, visible, and reviewed on a schedule." }
+    ]
+  },
+  {
+    "slug": "legacy-modernization-strategy",
+    "title": "Modernizing Legacy Systems Without Stopping the Business",
+    "excerpt": "'We'll rewrite it from scratch' is how modernization projects become tombstones. Here's the incremental playbook that actually ships.",
+    "category": "Modernization",
+    "author": { "name": "Daniel Kim", "role": "Co-founder & CTO" },
+    "authorBio": "Daniel has spent fifteen years building distributed systems across fintech and healthcare, and personally leads TechHelp's technical audit practice.",
+    "date": "2026-05-27",
+    "readTime": 9,
+    "content": [
+      { "type": "p", "text": "Somewhere in your organization is a system everyone is afraid of. It works — mostly. Nobody fully understands it. The original team has moved on. And every year, someone proposes rewriting it from scratch, and every year, wiser voices cite Joel Spolsky's famous warning and the proposal dies." },
+      { "type": "p", "text": "Both extremes are wrong. You don't rewrite from scratch, and you don't leave it forever. You strangle it." },
+      { "type": "h2", "text": "Map before you migrate" },
+      { "type": "p", "text": "Legacy systems fail in migration because their real behavior lives in undocumented edge cases accumulated over years. Before touching anything, we spend weeks mapping: every integration, every cron job at 3 AM nobody remembers creating, every report that depends on that one weird column. This map becomes the contract for everything after." },
+      { "type": "h2", "text": "Strangle, don't replace" },
+      { "type": "p", "text": "The strangler-fig pattern is twenty years old and still undefeated: build the new system around the edges of the old one, route functionality to it piece by piece, until the old core is a husk you switch off rather than a heart you transplant mid-surgery." },
+      { "type": "list", "items": [
+        "Start with read paths — new UI reading through an anti-corruption layer over old data",
+        "Then move isolated bounded contexts with clear seams (notifications, reporting)",
+        "Save the transactional core for last, when your team has earned confidence",
+        "Run dual-write verification on live traffic before any cutover; trust comparisons, not tests"
+      ] },
+      { "type": "quote", "text": "A successful modernization isn't the one with the best architecture diagram. It's the one where the business never noticed anything except things getting faster." },
+      { "type": "h2", "text": "Budget for transfer, not just construction" },
+      { "type": "p", "text": "The most common failure mode we're hired to fix: the modernization succeeded technically, then the consultancy left, and six months later the team is afraid of the new system exactly as much as the old one — except now there are two. Plan pairing sessions, documentation and handover as first-class deliverables with their own milestones, or you've just built next decade's legacy." }
+    ]
+  },
+  {
+    "slug": "ai-pair-programming-real-world",
+    "title": "AI Pair Programming: What Actually Changed After a Year",
+    "excerpt": "We put AI coding assistants in front of every engineer for twelve months. Here's the honest scorecard — productivity gains, new failure modes, and what we'd tell teams starting now.",
+    "category": "AI & Innovation",
+    "author": { "name": "Sofia Ramos", "role": "Senior Full-Stack Engineer" },
+    "authorBio": "Sofia has shipped production software across six industries and leads TechHelp's internal engineering-practice group, including its AI tooling pilots.",
+    "date": "2026-05-05",
+    "readTime": 7,
+    "content": [
+      { "type": "p", "text": "A year ago we gave every TechHelp engineer an AI coding assistant and, more importantly, a mandate to report honestly on where it helped and where it hurt. Twelve months of data, retros and slightly embarrassed confessions later, here's the scorecard." },
+      { "type": "h2", "text": "Where it genuinely helps" },
+      { "type": "list", "items": [
+        "Boilerplate of every species: CRUD endpoints, test scaffolding, migration scripts — time-to-first-draft fell dramatically",
+        "Unfamiliar territories: our engineers ramp up on secondary languages and unfamiliar frameworks noticeably faster",
+        "The rubber-duck effect: explaining a gnarly bug to the assistant surfaced the answer ourselves more often than we expected"
+      ] },
+      { "type": "h2", "text": "Where it quietly hurts" },
+      { "type": "p", "text": "The failure modes are subtler than 'it writes bad code.' It writes plausible code — confident, well-formatted, subtly wrong in ways that compile and pass a casual look. We measured a real uptick in review iterations on AI-assisted pull requests during the first quarter before review practices caught up." },
+      { "type": "quote", "text": "The skill that matters most is no longer typing speed. It's the ability to read critically at machine-generation speed." },
+      { "type": "h2", "text": "What we'd tell teams starting now" },
+      { "type": "p", "text": "Treat AI output like a bright intern's first draft: fast, useful, untrusted until verified. Invest in tests before you invest in tools — assistants amplify whatever verification culture exists, strong or weak. And measure honestly: we tracked review iteration counts, defect escape rates and cycle time per engineer, which is how we caught the regression while it was still cheap." },
+      { "type": "p", "text": "Net verdict after a year: keepers — with eyes open. The engineers who thrive treat the assistant like pair programming, not autopilot." }
+    ]
+  },
+  {
+    "slug": "why-the-discovery-phase-pays-for-itself",
+    "title": "Why the Discovery Phase Pays for Itself",
+    "excerpt": "Clients sometimes ask us to skip discovery and 'just start building.' Here's what two weeks of discovery actually buys — and what skipping it costs.",
+    "category": "Product Strategy",
+    "author": { "name": "Elena Torres", "role": "Co-founder & CEO" },
+    "authorBio": "Elena co-founded TechHelp in 2014 and has personally run discovery workshops for engagements across fintech, healthcare, logistics and education.",
+    "date": "2026-04-14",
+    "readTime": 5,
+    "content": [
+      { "type": "p", "text": "Discovery is the least glamorous phase of any engagement: no pixels, no deploys, just workshops, interviews and a document nobody outside the project will ever read. It's also the phase we're most often asked to skip — and the one whose absence we most reliably end up charging to fix later." },
+      { "type": "h2", "text": "What discovery actually produces" },
+      { "type": "list", "items": [
+        "A prioritized problem statement — which is often different from the brief that started the conversation",
+        "Success metrics agreed before anyone has sunk cost into a direction",
+        "The riskiest assumptions, surfaced while they're still cheap to test",
+        "A scoped first release that could ship in weeks, not quarters"
+      ] },
+      { "type": "h2", "text": "The math of skipping it" },
+      { "type": "p", "text": "Industry research has found that a large share of software features — by some measures nearly half — are built and rarely or never used. Discovery is how you avoid funding your share of that statistic. A two-week investment that redirects even 15 percent of a six-month build toward features people actually use pays back before the launch party." },
+      { "type": "quote", "text": "Nobody ever regretted spending two weeks learning what to build. Plenty of people have regretted spending six months building the wrong thing quickly." },
+      { "type": "h2", "text": "What good discovery looks like" },
+      { "type": "p", "text": "Good discovery is short and opinionated, not exhaustive. We interview real users when we can reach them, interrogate the data when we can't, and end with a recommendation we're willing to defend — including 'don't build this' when the evidence says so. The deliverable isn't a binder; it's alignment." },
+      { "type": "p", "text": "If your last project started with a kickoff sprint instead of a discovery phase, it's not too late: the second-best time to align on problems and metrics is now." }
+    ]
+  }
+]
