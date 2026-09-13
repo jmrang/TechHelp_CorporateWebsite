@@ -8,12 +8,7 @@ animated, CMS-shaped content, and a contact form that's one function away from g
 
 ## Live Demo
 
-> 🔗 **Placeholder** — drop your deployed URL here before sharing.
->
-> This is a static Vite SPA, so it deploys anywhere for free:
->
-> - **Vercel / Netlify** — import the repo, build command `npm run build`, output dir `dist`
-> - **GitHub Pages** — set `base: '/<repo-name>/'` in `vite.config.js`, build, publish `dist/`
+> 🔗 [TechHelp — Software Consulting Company](https://teach-help-corp-web.netlify.app/)
 
 ## Tech Stack
 
